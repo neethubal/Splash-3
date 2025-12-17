@@ -5,8 +5,8 @@ divert(-1)
 define(NEWPROC,) dnl
 
 dnl Empty ROI markers
-define(SPLASH3_ROI_BEGIN, `')
-define(SPLASH3_ROI_END, `')
+dnl define(SPLASH3_ROI_BEGIN, `')
+dnl define(SPLASH3_ROI_END, `')
 dnl
 dnl Sniper ROI markers
 dnl define(SPLASH3_ROI_BEGIN, `SimRoiStart()')
@@ -15,6 +15,10 @@ dnl
 dnl Gem5 ROI markers
 dnl define(SPLASH3_ROI_BEGIN, `m5_dumpreset_stats(0, 0)')
 dnl define(SPLASH3_ROI_END, `m5_dumpreset_stats(0, 0)')
+dnl
+dnl ZSim ROI markers
+define(SPLASH3_ROI_BEGIN, `zsim_roi_begin_()')
+define(SPLASH3_ROI_END,   `zsim_roi_end_()')
 
 define(BARRIER,
 `{

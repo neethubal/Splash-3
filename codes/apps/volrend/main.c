@@ -116,7 +116,7 @@ int main(int argc, char *argv[])
   if (num_nodes > 1) {
     {int aantal=num_nodes; while (aantal--) pthread_join(__tid__[aantal], NULL);};
   }
-  ;
+  zsim_roi_end_();
   {exit(0);};
 }
 
@@ -251,7 +251,7 @@ void Frame()
   printf("\nRendering...\n");
   printf("node\tframe\ttime\titime\trays\thrays\tsamples trilirped\n");
 
-  ;
+  zsim_roi_begin_();
   {
 	long	i, Error;
 

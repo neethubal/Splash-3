@@ -1376,7 +1376,7 @@ int main(int argc, char *argv[])
 
             /* Time stamp */
             {long time(); (time_rad_start ) = time(0);};
-            ;
+            zsim_roi_begin_();
 
             global->index = 0;
             for( i = 0 ; i < n_processors ; i++ )
@@ -1402,7 +1402,7 @@ int main(int argc, char *argv[])
 	radiosity();
 };
             {int aantal=n_processors; while (aantal--) pthread_join(__tid__[aantal], NULL);};
-            ;
+            zsim_roi_end_();
 
             /* Time stamp */
             {long time(); (time_rad_end ) = time(0);};

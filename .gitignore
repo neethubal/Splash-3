@@ -28,3 +28,6 @@ codes/apps/volrend/libtiff/libtiff.a
 codes/apps/volrend/libtiff/mkg3states
 
 pintool.log
+
+# Pin tool output
+pin.log
